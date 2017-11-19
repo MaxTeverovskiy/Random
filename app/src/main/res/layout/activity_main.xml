@@ -5,32 +5,56 @@
     android:orientation="vertical"
     >
 
-    <EditText
-        android:id="@+id/first_number"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="473dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/second_number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/first_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
 
-    <TextView
-        android:id="@+id/result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="" />
+            android:text="1234" />
 
-    <Button
-        android:onClick="plus"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/plus" />
+        <EditText
+            android:id="@+id/second_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3333" />
 
-    <Button
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="4567" />
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/minus" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="plus"
+            android:text="@string/plus" />
 
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="plus"
+            android:text="*" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="plus"
+            android:text="/" />
+
+    </LinearLayout>
 </LinearLayout>
